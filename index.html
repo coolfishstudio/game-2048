@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>2048</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable =no">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/support.js"></script>
-		<script type="text/javascript" src="js/show.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</head>
-	<body>
+
+<head>
+	<title>2048</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable =no">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+	<div id="gamePanel">
 		<header>
 			<h1>2048</h1>
-			<a href="javascript:newGame();" id="newGameBtn">New Game</a>
+			<a id="newGameBtn">New Game</a>
 			<p>成绩:<span id="score">0</span>&nbsp;&nbsp;&nbsp;&nbsp;高分:<span id="highScore">0</span></p>
 		</header>
 		<div id="grid-container">
@@ -37,6 +39,7 @@
 			<div class="grid-cell" id="grid-cell-3-2"></div>
 			<div class="grid-cell" id="grid-cell-3-3"></div>
 		</div>
+	</div>
+</body>
 
-	</body>
 </html>
